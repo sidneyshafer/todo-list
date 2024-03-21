@@ -1,22 +1,22 @@
 import React from 'react';
 
-import CourseGoalItem from '../CourseGoalItem/CourseGoalItem';
-import './CourseGoalList.css';
+import TodoItem from '../TodoItem/TodoItem';
+import './TodoList.css';
 
-const CourseGoalList = props => {
+const TodoList = props => {
   return (
-    <ul className="goal-list">
-      {props.items.map(goal => (
-        <CourseGoalItem
-          key={goal.id}
-          id={goal.id}
+    <ul className="todo-list">
+      {props.items.map(todo => (
+        <TodoItem
+          key={todo.id}
+          id={todo.id}
           onDelete={props.onDeleteItem}
         >
-          {goal.text}
-        </CourseGoalItem>
+          {todo.text}
+        </TodoItem>
       ))}
     </ul>
   );
 };
 
-export default CourseGoalList;
+export default TodoList;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './CourseGoalItem.css';
+import './TodoItem.css';
 
-const CourseGoalItem = props => {
+const TodoItem = props => {
   // const [deleteText, setDeleteText] = useState('');
 
   const deleteHandler = () => {
@@ -11,10 +11,10 @@ const CourseGoalItem = props => {
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
+    <li className="todo-item" onClick={deleteHandler}>
       {props.children}
     </li>
   );
 };
 
-export default CourseGoalItem;
+export default TodoItem;

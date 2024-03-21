@@ -1,54 +1,48 @@
 import React, { useState } from 'react';
 
-import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
-import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
+import TodoList from './components/Todos/TodoList/TodoList';
+import Input from './components/Todos/Input/Input';
 import './App.css';
 
 const App = () => {
-  const [courseGoals, setCourseGoals] = useState([
+  const [courseTodos, setTodos] = useState([
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' }
   ]);
 
-  const addGoalHandler = enteredText => {
-    setCourseGoals(prevGoals => {
-      const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
-      return updatedGoals;
+  const addTodoHandler = enteredText => {
+    setTodos(prevTodos => {
+      const updatedTodos = [...prevTodos];
+      updatedTodos.unshift({ text: enteredText, id: Math.random().toString() });
+      return updatedTodos;
     });
   };
 
-  const deleteItemHandler = goalId => {
-    setCourseGoals(prevGoals => {
-      const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
-      return updatedGoals;
+  const deleteItemHandler = todoId => {
+    setTodos(prevTodos => {
+      const updatedTodos = prevTodos.filter(todo => todo.id !== todoId);
+      return updatedTodos;
     });
   };
 
   let content = (
-    <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+    <p style={{ textAlign: 'center' }}>No todos found. Maybe add one?</p>
   );
 
-  if (courseGoals.length > 0) {
+  if (courseTodos.length > 0) {
     content = (
-      <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />
+      <TodoList items={courseTodos} onDeleteItem={deleteItemHandler} />
     );
   }
 
   return (
     <div>
-      <section id="goal-form">
-        <CourseInput onAddGoal={addGoalHandler} />
+      <section id="todo-form">
+        <Input onAddTodo={addTodoHandler} />
       </section>
-      <section id="goals">
+      <section id="todos">
+      <p style={{ textAlign: 'center' }}>Left click to delete todo.</p>
         {content}
-        {/* {courseGoals.length > 0 && (
-          <CourseGoalList
-            items={courseGoals}
-            onDeleteItem={deleteItemHandler}
-          />
-        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
-        } */}
       </section>
     </div>
   );
