@@ -1,5 +1,5 @@
 #  Todo List
-A React application for adding todos to a list.
+A React application for adding todos to a list. Check out the [Live Site](https://funny-paletas-5452e6.netlify.app/) :arrow_upper_right:.
 
 ## User Interface Design
 
