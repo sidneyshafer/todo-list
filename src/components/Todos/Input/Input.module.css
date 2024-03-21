@@ -1,17 +1,21 @@
 .form-control {
   margin: 0.5rem 0;
+  color: rgba(225, 225, 225, 0.9);
 }
 
 .form-control label {
   font-weight: bold;
+  text-transform: uppercase;
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .form-control input {
+  background-color: rgba(225, 225, 225, 0.9);
   display: block;
   width: 100%;
   border: 1px solid #ccc;
+  border-radius: 5px;
   font: inherit;
   line-height: 1.5rem;
   padding: 0 0.25rem;
@@ -19,8 +23,9 @@
 
 .form-control input:focus {
   outline: none;
-  background: #fad0ec;
-  border-color: #8b005d;
+  background: rgba(5, 25, 35, 0.5);
+  color: #fff;
+  border-color: #fff;
 }
 
 .form-control.invalid input {

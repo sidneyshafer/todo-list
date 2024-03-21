@@ -1,8 +1,9 @@
 .todo-item {
   margin: 1rem 0;
-  background: #8b005d;
+  background: #003554;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  color: white;
+  color: rgba(225, 225, 225, 0.9);
   padding: 1rem 2rem;
   cursor: pointer;
 }

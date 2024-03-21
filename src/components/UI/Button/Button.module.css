@@ -1,10 +1,12 @@
 .button {
   width: 100%;
   font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #8b005d;
-  color: white;
-  background: #8b005d;
+  padding: 0.6rem 1.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #051923;
+  color: rgba(225, 225, 225, 0.9);
+  background: #051923;
+  border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   cursor: pointer;
 }
@@ -15,8 +17,8 @@
 
 .button:hover,
 .button:active {
-  background: #ac0e77;
-  border-color: #ac0e77;
+  background-color: rgba(5, 25, 35, 0.7);
+  border-color: rgba(5, 25, 35, 0.7);;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
 }
 

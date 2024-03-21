@@ -6,8 +6,8 @@ import './App.css';
 
 const App = () => {
   const [courseTodos, setTodos] = useState([
-    { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Finish the course!', id: 'g2' }
+    { text: 'Go grocery shopping', id: 'g1' },
+    { text: 'Fix the upstairs batheroom', id: 'g2' }
   ]);
 
   const addTodoHandler = enteredText => {

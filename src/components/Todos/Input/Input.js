@@ -29,7 +29,7 @@ const Input = (props) => {
       <div
         className={`${styles['form-control']} ${!isValid && styles.invalid}`}
       >
-        <label> Todo</label>
+        <label>Todo List</label>
         <input type='text' onChange={todoInputChangeHandler} />
       </div>
       <Button type='submit'>Add Todo</Button>
