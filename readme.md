@@ -1,7 +1,9 @@
-#  Todo Project
-A simple React application for adding course todos to a list. I created this project in an online React bootcamp.
+#  Todo List
+A React application for adding todos to a list.
 
-## Usage
+## User Interface Design
+
+## App Usage
 Install dependencies
 ```
 npm install
