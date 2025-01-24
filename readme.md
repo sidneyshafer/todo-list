@@ -21,3 +21,10 @@ Build for production:
 npm run build
 ```
 Production files will be in the `build` folder.
+
+## Checking for Dependency Updates
+```
+npm i -g npm-check-updates
+ncu -u
+npm install
+```
