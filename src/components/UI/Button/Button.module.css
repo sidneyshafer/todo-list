@@ -3,8 +3,9 @@
   font: inherit;
   padding: 0.6rem 1.5rem;
   margin-top: 0.5rem;
-  border: 1px solid #051923;
-  color: rgba(225, 225, 225, 0.9);
+  /* border: 1px solid #051923; */
+  border: none;
+  color: #fff;
   background: #051923;
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
@@ -17,9 +18,9 @@
 
 .button:hover,
 .button:active {
-  background-color: rgba(5, 25, 35, 0.7);
-  border-color: rgba(5, 25, 35, 0.7);;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+  background-color: #22223b;
+  /* border-color: rgba(5, 25, 35, 0.7);; */
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.26); */
 }
 
 @media (min-width: 768px) {
